@@ -9,4 +9,10 @@ echo "# Termux bashrc" >> .bashrc
 # Install Ubuntu.
 pkg install proot proot-dsitro -y
 proot-distro install ubuntu
-proot-distro login ubuntu --termux-home
+proot-distro login ubuntu --termux-home -- $HOME/termubuntu/setting_user_ubuntu.sh
+
+# Reload bashrc.
+shopt -s expand_aliases
+source $HOME/.bashrc
+ubuntu -- bash /data/data/com.termux/files/home/termubuntu/setting_dotfiles_termux.sh
+ubuntu
