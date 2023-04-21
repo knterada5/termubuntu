@@ -7,7 +7,7 @@ termux-setup-storage
 echo "# Termux bashrc" >> .bashrc
 
 # Install Ubuntu.
-pkg install proot proot-dsitro -y
+pkg install proot proot-distro -y
 proot-distro install ubuntu
 proot-distro login ubuntu --termux-home -- $HOME/termubuntu/setting_user_ubuntu.sh
 
