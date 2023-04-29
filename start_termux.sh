@@ -14,5 +14,5 @@ proot-distro login ubuntu --termux-home -- bash termubuntu/setting_user_ubuntu.s
 # Reload bashrc.
 shopt -s expand_aliases
 source $HOME/.bashrc
-ubuntu -- bash /data/data/com.termux/files/home/termubuntu/setting_dotfiles_termux.sh
+ubuntu -- bash /data/data/com.termux/files/home/termubuntu/start_ubuntu.sh
 ubuntu

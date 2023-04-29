@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Setting User.
-apt update
-apt upgrade -y
+apt update && apt upgrade -y
 apt install sudo
 echo -n "Enter User Name: "
 read NAME
