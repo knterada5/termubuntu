@@ -4,5 +4,4 @@
 sudo -S apt install tigervnc-standalone-server openbox xterm -y
 
 # Download dotfiles.
-git clone https://github.com/knterada5/.dotfiles.git
-bash $HOME/.dotfiles/start.sh
+curl -LO https://raw.githubusercontent.com/knterada5/.dotfiles/main/install_linux.sh; source install_linux
