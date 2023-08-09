@@ -3,13 +3,14 @@
 # Setting User.
 apt update && apt upgrade -y
 apt install sudo
+printf '\a'
 read -p "Enter User Name: " NAME
-adduser $1
+adduser $NAME
 
 # Add sudo group.
-echo "$1 ALL=(ALL:ALL) ALL" >> /etc/sudoers
+echo "$NAME ALL=(ALL:ALL) ALL" >> /etc/sudoers
 
 # Auto Login user.
-echo "alias ubuntu='proot-distro login --user $1 ubuntu'" >> $HOME/.bashrc
+echo "alias ubuntu='proot-distro login --user $NAME ubuntu'" >> $HOME/.bashrc
 
 exit
