@@ -9,7 +9,7 @@ echo "# Termux bashrc" >> .bashrc
 # Install Ubuntu.
 pkg install proot proot-distro -y
 proot-distro install ubuntu
-proot-distro login ubuntu --termux-home -- bash termubuntu/scripts/setting_user_ubuntu.sh $1
+proot-distro login ubuntu --termux-home -- bash termubuntu/scripts/setting_user_ubuntu.sh
 
 # Reload bashrc.
 shopt -s expand_aliases
