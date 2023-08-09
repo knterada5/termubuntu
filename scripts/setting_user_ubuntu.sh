@@ -3,8 +3,7 @@
 # Setting User.
 apt update && apt upgrade -y
 apt install sudo
-echo -n "Enter User Name: "
-read NAME
+read -p "Enter User Name: " NAME
 adduser $NAME
 
 # Add sudo group.
